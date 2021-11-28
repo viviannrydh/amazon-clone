@@ -2,16 +2,17 @@ import React from 'react';
 import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="header">
-      <img
+      
+      <Link to="/"><img
         src="https://thumbs.dreamstime.com/b/logotyp-f%C3%B6r-amazon-ikonen-amazoncom-inc-%C3%A4r-ett-amerikanskt-multinationellt-teknikf%C3%B6retag-baserat-i-seattle-wash-ington-som-204759332.jpg"
         alt="" 
         className="header_logo"
-      />
+      /></Link>
       <div className="header_search">
         <input type="text" className="header_searchInput" />  
         <SearchIcon style={{color:'white'}}/>
@@ -30,7 +31,7 @@ const Header = () => {
           <span className="header_optionLineTwo">Prime</span>
         </div>
         <div className="header_optionBasket">
-          <LocalMallIcon style={{ color: 'white' }} />
+          <Link to="/checkout"><LocalMallIcon style={{ color: 'white' }} /></Link>
           <span className="header_optionLineTwo header_basketCount">0</span>
         </div>
       </div>
