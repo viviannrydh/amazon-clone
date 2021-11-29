@@ -15,6 +15,7 @@ const Home = () => {
           <Product
             id={123}
             title="lenovo"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={598}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={5}
@@ -22,6 +23,7 @@ const Home = () => {
           <Product
             id={234}
             title="lenovo"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={598}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={4}
@@ -31,6 +33,7 @@ const Home = () => {
           <Product
             id={345}
             title="lenovo"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={598}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={5}
@@ -38,6 +41,7 @@ const Home = () => {
           <Product
             id={456}
             title="lenovo"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={598}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={4}
@@ -45,6 +49,7 @@ const Home = () => {
           <Product
             id={567}
             title="lenovo"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={598}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={3}
@@ -54,6 +59,7 @@ const Home = () => {
           <Product
             id={678}
             title="lenovo"
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={598}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={5}

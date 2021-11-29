@@ -1,0 +1,68 @@
+.signIn-container{
+  display:flex;
+  flex-direction: column;
+  width:26%;
+  height:50%;
+  margin-left: 37%;
+  text-align: center;
+  justify-content: center;
+  border:1px solid rgb(56, 54, 54);
+  padding:3% 0;
+}
+
+.email,
+.password{
+  width:80%;
+  height:45px;
+  margin-left:10%;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.continue-btn{
+  width:81%;
+  height:48px;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  color:rgb(36, 26, 3);
+  font-size: medium;
+  font-weight: bold;
+  background-color: darkgoldenrod;
+  color: white;
+  border:none;
+}
+
+h1{
+  color:rgb(65, 56, 2);
+  margin-bottom: 5%;
+  margin-left: ;
+}
+
+.signUp-btn{
+  width:81%;
+  margin-left: 10%;
+  height: 48px;
+  border-radius: 10px;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  font-size: medium;
+  color:rgb(224, 234, 238);
+  background-color: rgb(12, 71, 82);
+  font-weight: bold;
+  border: none;
+}
+
+.policy-text{
+  padding: 40px;
+  padding-top: 0px;
+}
+
+.amazon-logo-signin{
+  width:10%;
+  margin-top: 4%;
+  margin-left: 45%;
+  margin-bottom: 1.5%;
+
+}

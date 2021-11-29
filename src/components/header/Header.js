@@ -3,11 +3,19 @@ import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../../StateProvider';
+import { auth } from '../../firebase';
 
 const Header = () => {
+  const [{ basket, user }] = useStateValue();
+  const handleAuthentication = () => { 
+    if (user) { 
+      auth.signOut();
+    }
+  }
+
   return (
     <div className="header">
-      
       <Link to="/"><img
         src="https://thumbs.dreamstime.com/b/logotyp-f%C3%B6r-amazon-ikonen-amazoncom-inc-%C3%A4r-ett-amerikanskt-multinationellt-teknikf%C3%B6retag-baserat-i-seattle-wash-ington-som-204759332.jpg"
         alt="" 
@@ -18,10 +26,12 @@ const Header = () => {
         <SearchIcon style={{color:'white'}}/>
       </div>
       <div className="header_nav">
-        <div className="header_option">
-          <span className="header_optionLineOne">Hello Viviann</span>
-          <span className="header_optionLineTwo">Sign In</span>
-        </div>
+        <Link to={!user && '/signin'}>
+          <div className="header_option" onClick={handleAuthentication}>
+            <span className="header_optionLineOne">Hello Viviann</span>
+            <span className="header_optionLineTwo">{user ? 'Sign Out' :'Sign In'}</span>
+          </div>
+        </Link>
         <div className="header_option">
           <span className="header_optionLineOne">Return</span>
           <span className="header_optionLineTwo">Orders</span>
@@ -32,7 +42,7 @@ const Header = () => {
         </div>
         <div className="header_optionBasket">
           <Link to="/checkout"><LocalMallIcon style={{ color: 'white' }} /></Link>
-          <span className="header_optionLineTwo header_basketCount">0</span>
+          <span className="header_optionLineTwo header_basketCount">{basket?.length}</span>
         </div>
       </div>
     </div>
