@@ -44,3 +44,16 @@
 .checkout-list-image{
   width:30%;
 }
+
+.remove-btn{
+  width:40%;
+  height:35px;
+  margin-left: 30%;
+  margin-top: 20px;
+  background-color: rgb(161, 13, 8);
+  color:whitesmoke;
+  font-size: medium;
+  border-radius: 20px;
+  border: none;
+
+}

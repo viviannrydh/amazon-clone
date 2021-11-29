@@ -3,9 +3,16 @@ import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import LocalMallIcon from '@material-ui/icons/LocalMall';
 import { Link } from 'react-router-dom';
-import { useStateValue } from '../../StateProvider'
+import { useStateValue } from '../../StateProvider';
+import { auth } from '../../firebase';
+
 const Header = () => {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+  const handleAuthentication = () => { 
+    if (user) { 
+      auth.signOut();
+    }
+  }
 
   return (
     <div className="header">
@@ -19,10 +26,12 @@ const Header = () => {
         <SearchIcon style={{color:'white'}}/>
       </div>
       <div className="header_nav">
-        <div className="header_option">
-          <span className="header_optionLineOne">Hello Viviann</span>
-          <span className="header_optionLineTwo">Sign In</span>
-        </div>
+        <Link to={!user && '/signin'}>
+          <div className="header_option" onClick={handleAuthentication}>
+            <span className="header_optionLineOne">Hello Viviann</span>
+            <span className="header_optionLineTwo">{user ? 'Sign Out' :'Sign In'}</span>
+          </div>
+        </Link>
         <div className="header_option">
           <span className="header_optionLineOne">Return</span>
           <span className="header_optionLineTwo">Orders</span>

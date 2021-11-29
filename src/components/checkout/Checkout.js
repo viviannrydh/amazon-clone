@@ -3,30 +3,29 @@ import Product from '../product/Product'
 import './Checkout.css';
 import Subtotal from './Subtotal';
 import { useStateValue } from '../../StateProvider';
+import CheckoutProduct from './CheckoutProduct';
 
-const Checkout = () => {
-  const [{ basket }] = useStateValue();
+const Checkout = ({ id }) => {
+  const [{ basket, user }, dispatch] = useStateValue();
+ 
   return (
     <div className="checkout">
         <div className="checkout-left">
-          <div>
+        <div>
+          <h3>Hello {user?.email}</h3>
             <h2 className="checkout-title">
                 Your shopping Basket
             </h2>
           <div className="checkout-list">
-            {basket.map(item => (
-              <>
-                <div className="singelItem">
-                  <img src={item.image} alt="" className="checkout-list-image" />
-                  <hr />
-                  <div className="product-detail">
-                    <h4>{item.title}</h4>
-                    <strong> $ {item.price}</strong>
-                    <p>{item.description}</p>
-                  </div>
-                </div>
-                <hr />
-              </>
+            {basket.map(basketItem => (
+              <CheckoutProduct 
+                id={basketItem.id}
+                image={basketItem.image}
+                title={basketItem.title}
+                price={basketItem.price}
+                description={basketItem.description}
+                rating={basketItem.rating}
+              />
                 
               ))}
             </div>
