@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -10,29 +10,33 @@ import { useStateValue } from './StateProvider';
 
 function App() {
   const [{ }, dispatch] = useStateValue();
+  const [email, setEmail] = useState('')
+
 
   useEffect(() => { 
     auth.onAuthStateChanged(authUser => { 
-      console.log('the user is >>', authUser)
       if (authUser) {
         // to check if there is a user logged in
         dispatch({
           type: 'SET_USER',
           user: authUser  
         })
+        setEmail(authUser.email)
       } else { 
         // no user was logged in
         dispatch({
           type: 'SET_USER',
           user: null
         })
+        setEmail('friend')
       }
     })
   }, [])
+  
   return (
     <Router>
       <div className="app">
-        <Header />
+        <Header email={email}/>
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/checkout" exact element={<Checkout />} />
