@@ -14,10 +14,7 @@ const Checkout=({ id })=>{
     <div className="checkout">
         <div className="checkout-left">
         <div>
-          <h3>Hello {user?.email}</h3>
-            <h2 className="checkout-title">
-                Your shopping Basket
-            </h2>
+          <h2 className="checkout-title">Dear {user?.email.substring(0, user?.email.indexOf('@'))}, here is your shopping Basket</h2>
           <div className="checkout-list">
             {basket.map(basketItem => (
               <CheckoutProduct 
@@ -28,8 +25,7 @@ const Checkout=({ id })=>{
                 price={basketItem.price}
                 description={basketItem.description}
                 rating={basketItem.rating}
-              />
-                
+              />               
               ))}
             </div>
           </div>

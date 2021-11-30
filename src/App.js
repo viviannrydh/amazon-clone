@@ -39,7 +39,7 @@ function App() {
         <Header email={email}/>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/checkout" exact element={<Checkout />} />
+          <Route path="/checkout" exact element={<Checkout />} email={email}/>
           <Route path="/signin" exact element={<SignIn />} />
         </Routes>
       </div>
