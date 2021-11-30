@@ -1,0 +1,21 @@
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  width: 100%;
+  z-index:-1;
+  mask-image:linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
+}
+
+
+
+
+
