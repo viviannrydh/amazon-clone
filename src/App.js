@@ -7,6 +7,9 @@ import Checkout from './components/checkout/Checkout';
 import SignIn from './components/signIn/SignIn';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
+import Subheader from './components/header/Subheader';
+import Payment from './components/payment/Payment';
+import Orders from './components/orders/Orders';
 
 function App() {
   const [{ }, dispatch] = useStateValue();
@@ -36,11 +39,14 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header email={email}/>
+        <Header email={email} />
+        {/*<Subheader />*/}
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/checkout" exact element={<Checkout />} email={email}/>
           <Route path="/signin" exact element={<SignIn />} />
+          <Route path="/payment" exact element={<Payment />} />
+          <Route path="/orders" exact element={<Orders />} />
         </Routes>
       </div>
     </Router>

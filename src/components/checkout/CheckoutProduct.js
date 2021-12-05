@@ -7,7 +7,6 @@ const CheckoutProduct = ({ id, image, title, rating, price, description }) => {
     dispatch({
       type: "REMOVE_FROM_BASKET",
       id: id
-
     })
   }
   return (
