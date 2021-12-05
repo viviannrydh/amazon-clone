@@ -20,10 +20,10 @@ const Home = () => {
           />
           <Product
             id={123}
-            title="Laptop"
+            title="Computer Screen"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={288}
-            image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
+            image='https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83551467/fee_786_587_png'
             rating={5}
           />
           <Product
@@ -41,7 +41,7 @@ const Home = () => {
             title="Desktop screen"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
             price={198}
-            image='https://www.lenovo.com/medias/61C3MAT6-500-1.png?context=bWFzdGVyfGltYWdlc3w4Mzg5OHxpbWFnZS9wbmd8aW1hZ2VzL2hlZS9oNjMvMTA4NDU1MTIzNjgxNTgucG5nfDg3Y2EzYzE0ZDk1MjllMmQ3ZDM0MDEwNjA3YTc4NmNkMzJhMzNhN2NkMGYwNTllYjMyMDI3MTc4NWQ1N2Y3YWM'
+            image='https://img01.huaweifile.com/eu/es/huawei/pms/product/6941487212750/800_800_A9B1C9B8334E972659658F6477BC8F7342F5B7168A0196CAmp.png'
             rating={5}
           />
           <Product

@@ -44,7 +44,8 @@ const Payment = () => {
                   description={item.description}
                   rating={item.rating}
                 />))
-              }
+            }
+            <br />
             </div>
           </div>
           <div className="payment-block">
