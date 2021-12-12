@@ -14,7 +14,7 @@ const Home = () => {
             id={123}
             title="Laptop"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
-            price={288}
+            price={1120}
             image='https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-carbon-gen-9-14-subseries-hero.png?context=bWFzdGVyfHJvb3R8NjM3NDR8aW1hZ2UvcG5nfGg1Yy9oNDMvMTE2Mjg3NTE2MTgwNzgucG5nfDA1N2Y2ZjU4M2YwOGQ0OTFmMGI4Y2RlN2ZmYTQ4ZWJhZDljNTVlOTNkNTNjNmI2ZDM1ODNjODVmMGY5NGUyMTU'
             rating={5}
           />
@@ -22,7 +22,7 @@ const Home = () => {
             id={123}
             title="Computer Screen"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quae? Placeat natus dolores, sit quibusdam hic commodi, enim harum exercitationem minima"
-            price={288}
+            price={988}
             image='https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83551467/fee_786_587_png'
             rating={5}
           />

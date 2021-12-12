@@ -1,0 +1,12 @@
+.dropdown-wrapper{
+  display:hidden;
+
+}
+
+.dropdown-lists{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+}
+
